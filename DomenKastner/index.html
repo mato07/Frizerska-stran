@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>FS-Hairstyler</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-static navbar-zgoraj ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <!--gumb v katerega se skrije vsebina menija na manjših zaslonih-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">toogle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">FullStack Hairsyler</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!--Vse kar je do zaklučka tega diva se skrije v gumb na malih zalonih-->
+
+          <ul class="nav navbar-nav navbar-right meni-zg">
+            <li class="active active-kdo"><a href="#">Kdo smo</a></li>
+            <li class="dropdown>">
+              <a class="dropdown-toggle storitve" data-toggle="dropdown" href="#">Storitve
+             <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header ddhh">Hair Styling</li>
+                <li><a href="#">M/Ž striženje</a></li>
+                <li><a href="#">Barvanje las</a></li>
+                <li><a href="#">Urejanje brade</a></li>
+                <li><a href="#">Trajna ondulacija</a></li>
+                <li class="dropdown-header ddhh">Kozmetika</li>
+                <li><a href="#">Depilacija</a></li>
+                <li><a href="#">Make-up</a></li>
+                <li><a href="#">Inšeinše</a></li>
+              </ul>
+            </li>
+            <li><button class="btn btn-info navbar-btn btn-md btn-narocise" data-toggle="modal" data-target="#myModal">Naroči se</button></li>
+            <li id="kakodonas"><a href="#">Kako do nas</a></li>
+
+            <form class="navbar-form navbar-right navbar-src" action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Iskanje" name="search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit" title="iskanje">
+            <i class="glyphicon glyphicon-fire"></i>
+          </button>
+                </div>
+              </div>
+            </form>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title bg-info">Obvestilo za stranke</h4>
+          </div>
+          <div class="modal-body">
+            <p>Zaradi občutno premalo dela, trenutno ne sprejemamo naročil.<br /> Pridite in takoj boste na vrsti.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zapri</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!--Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://i.imgur.com/Mban93A.jpg?2" alt="Salon1">
+        </div>
+
+        <div class="item">
+          <img src="https://i.imgur.com/imvDoS5.jpg?4" alt="porocnepriceske">
+        </div>
+
+        <div class="item">
+          <img src="https://i.imgur.com/E0c0Qmg.jpg?2" alt="kitke">
+        </div>
+
+        <div class="item">
+          <img src="https://i.imgur.com/ijgNBj2.jpg?2" alt="zivebarve">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+    <br/>
+    <br/>
+
+    <!--Info of WhatWeDo-->
+
+    <div class="row row-whatwedo">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-default panel-whatwedo">
+          <div class="panel-heading">
+            <span class="panel-title"><strong>Striženje</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-scissors"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/TKvPj4ch.jpg" alt="Striženje" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-info panel-whatwedo">
+          <div class="panel-heading panel-heading-custom">
+            <span class="panel-title"><strong>Barvanje</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-scissors"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/D3TEtBRh.jpg" alt="Coloring" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-warning panel-whatwedo">
+          <div class="panel-heading">
+            <span class="panel-title"><strong>Priložnostne pričeske</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-scissors"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/dlZ2cg5h.jpg" alt="special-hairstyle" class="img-responsive">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-success panel-whatwedo">
+          <div class="panel-heading">
+            <span class="panel-title"><strong>Britje</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-scissors"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/fviQI9Wh.jpg" alt="Shave" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+
+      <!--clearfix zaradi nepravilne postavitve na "md" zaslonih-->
+      <div class="clearfix visible-sm"></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-danger panel-whatwedo">
+          <div class="panel-heading">
+            <span class="panel-title"><strong>MakeUp</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-leaf"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/92YVCNf.jpg" alt="Makeup" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gly">
+        <div class="panel panel-primary panel-whatwedo">
+          <div class="panel-heading">
+            <span class="panel-title"><strong>Manikura</strong></span>
+            <div class="pull-right">
+              <span class="glyphicon glyphicon-whatwedo glyphicon-leafred glyphicon-leaf"></span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <img src="https://i.imgur.com/GMdXw0Lh.jpg" alt="Nohti" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <!--cenik in naročila-->
+    <section class="container container-flex">
+      <div class="row row-ceniki">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="text-center">Moške Frizure</h3></div>
+            <div class="panel-body text-center">
+              <p class="lead" style="font-size:40px"><strong>Že od 10€ dalje</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><i class="icon-ok text-danger"></i>Klasično striženje</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i>Moderne frizure</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i>Otroci</li>
+            </ul>
+            <div class="panel-footer">
+              <a class="btn btn-lg btn-block btn-success" href="#">Naroči se</a>
+            </div>
+            <!--/panel-footer-->
+          </div>
+          <!--/panel-->
+        </div>
+        <!--/col-->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="text-center">Ženske frizure</h3></div>
+            <div class="panel-body text-center">
+              <p class="lead" style="font-size:40px"><strong>že od 20€ dalje</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><i class="icon-ok text-danger"></i> Barvanje</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i> Trajna ondulacija</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i> Priložnostne pričeske</li>
+            </ul>
+            <div class="panel-footer">
+              <a class="btn btn-lg btn-block btn-success" href="#">Naroči se</a>
+            </div>
+            <!--/panel-footer-->
+          </div>
+          <!--/panel-->
+        </div>
+        <!--/col-->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="text-center">Kozmetične storitve</h3></div>
+            <!--glej vprašanje v CSS vrstica 85-->
+            <div class="panel-body text-center">
+              <p class="lead" style="font-size:40px"><strong>Že od 30€ dalje</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><i class="icon-ok text-danger"></i>Depiliranje</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i> Botoks</li>
+              <li class="list-group-item"><i class="icon-ok text-danger"></i> MakeUp</li>
+            </ul>
+            <div class="panel-footer">
+              <a class="btn btn-lg btn-block btn-success" href="#">Naroči se</a>
+            </div>
+            <!--/panel-footer-->
+          </div>
+          <!--/panel-->
+        </div>
+        <!--/col-->
+      </div>
+      <!--/row-->
+    </section>
+    <!--/container-->
+    <br />
+    <br />
+
+    <!--urnik-->
+    <section class="container container-flex">
+      <div class="row row-ponudba in povprasevanje">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="panel panel-body">
+            <table>
+              <h3 class="text-center text-info">Urnik</h3>
+              <tr>
+                <th>Ponedeljek</th>
+                <td>06:30-17:00</td>
+              </tr>
+              <tr>
+                <th>Torek</th>
+                <td>06:30 17:00</td>
+              </tr>
+              <tr>
+                <th>Sreda</th>
+                <td>06:30-17:00</td>
+              </tr>
+              <tr>
+                <th>Četrtek</th>
+                <td>06:30-17:00</td>
+              </tr>
+              <tr>
+                <th>Petek</th>
+                <td>06:30-17:00</td>
+              </tr>
+              <tr>
+                <th>
+                  Sobote,Nedelje in praznike zaradi bogatije zaprto
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!--Pohvale in pritožbe-->
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <div class="panel panel-body">
+            <h3 class="text-info text-center">Pohvale in pritožbe</h3>
+            <div class="form-group">
+              <label for="usr">Ime ali Vzdevek</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <label for="text">Email</label>
+            <input class="form-control" id="focusedInput" type="text">
+            <label for="comment">Semkaj vpišite vašo lepo spodbudno besedo ali pa grajo</label>
+            <textarea class="form-control" rows="3" id="comment"></textarea>
+          </div>
+        </div>
+      </div>
+      <!--pohvale in pritožbe/end-->
+  </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!--Footer-->
+  <div class="container-flex">
+    <div class="navbar navbar-static-bottom navbar-inverse" role="navigation">
+      <div class="navbar-text pull-left">
+        <p>
+          Bootstrap practice in late 2017
+          <hr /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  </div>
+</body>
+
+</html>

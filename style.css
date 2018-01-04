@@ -1,0 +1,103 @@
+.container1 {
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.margin-spodaj{
+  margin-bottom: 50px;
+}
+
+.margin-zgoraj{
+  margin-top: 10px;
+}
+
+.sirina{
+  max-width:300px;
+}
+
+.sirina3{
+  max-width:350px;
+}
+
+.sirina2{
+  max-width:80px;
+}
+
+.table {
+   margin: auto;
+}
+
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel2 {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.povezava li a:link{
+    color:black;
+    text-decoration:none;
+}
+
+.povezava li a:hover{
+    color:blue;
+    text-decoration:none;
+}
+
+.povezava li a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+.nav1 > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 15px;
+}
+
+#odmik {
+  margin-left: 15px;
+}

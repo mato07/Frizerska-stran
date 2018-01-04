@@ -1,0 +1,93 @@
+body {
+  background-image: url("https://i.imgur.com/v6wx1ySh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//*navbar...Moram še delat na pozicioniranju!*//
+.navbar-zgoraj {
+  margin-top: 0px;
+}
+
+.navbar-brand {
+  Padding-top: 16px;
+  font-size: 22px;
+}
+
+.meni-zg {
+  margin-right: 7px;
+}
+
+.storitve {
+  padding-top: 0px
+}
+
+.ddhh {
+  background-color: rgba(44, 165, 242, 0.66);
+  color:black;
+  font-size: 16px;
+}
+
+.active-kdo {
+  padding-top: 0px;
+}
+
+.btn-narocise {
+  margin-top: 8px;
+  margin-left: 0px;
+}
+
+#kakodonas {
+  padding-bottom: 0px;
+}
+
+.navbar-src {
+  padding-top: 0px;
+}
+
+//*Carousel*//
+.carousel-inner {
+  width: auto;
+  /* use this, or not */
+}
+
+.carousel {
+  color: rgba(0, 101, 252, 0.66);
+  width: auto;
+  max-width: 945px;
+  margin: auto;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.item img {
+  margin: auto;
+  width: auto;
+  max-height: auto;
+  min-height: auto;
+}
+
+.glyphicon-fire {
+  color: #ff0000;
+  font-size: 15px;
+}
+
+//*panels WHATWEDO*//
+//*
+-tukaj sem hotel spreminjati velikosti glyphov na desni,
+barvo, pozicijo in velikost pisave v panel-heading.
+ Probal marsikaj a mi nikakor ni uspelo povoziti bootstrapa.
+-Prav tako je Panel "Manikura" za 3px bolj globok???
+Vzroka in fixa zaenkrat ne najdem. Sumim vzrok velikost slike.
+*//
+
+//*CENIKI*//
+//*Pri pomanjšanju na "SM" zaslonu se desni panel zaradi besedila,
+ki skoči v naslednjo vrsto poveča v višini. Poskusi najti rešitev da se na "sm"
+besedilo pomajša v velikosti.*//
+
+//*URNIK*//
+
+//*Form*//
+
+//*Footer-Navbar*//
